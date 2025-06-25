@@ -1,0 +1,28 @@
+body {
+  background-image: url("images/bg-graphic.gif");
+  color: white;
+  overflow: hidden;
+}
+
+h2 {
+  margin: 12px 0;
+}
+
+.character-card-container {
+  display: block;
+  margin: 25vh auto;
+  background-color: #4a659696;
+  width: fit-content;
+  height: auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin: 5px;
+}

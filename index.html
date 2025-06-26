@@ -3,65 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peyton Bighorse | Developer & Artist</title>
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <!--CSS link-->
     <link rel="stylesheet" href="styles.css" />
-    <title>Peyton Bighorse | Developer & Artist</title>
   </head>
   <body>
-    <div class="container p-5 character-card-container border rounded">
-      <div class="row">
-        <div class="col-3 border">
-          <div class="row avatar-img">
-            <img src="images/pmb-avatar.png" alt="" />
-          </div>
-          <div class="row border text-center">
-            <div class="pmb-name">Peyton Bighorse</div>
-          </div>
-          <div class="row border">Test</div>
-          <div class="row border">Test</div>
-        </div>
-        <div class="col-9 border">
-          <div class="row border">
-            <div class="col-9">
-              <h2>ABOUT</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-                rerum repudiandae, mollitia, maxime, libero tempora nihil
-                nesciunt itaque illum dolores cumque voluptatem quidem sed non
-                labore nam quisquam? Beatae, illum.
-              </p>
+    <div class="character-card-container">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-3 border-right">
+            <div class="row avatar-img rounded">
+              <img src="images/pmb-avatar.png" alt="" class="img-fluid" />
             </div>
-            <div class="col-3 border">
-              <ul>
-                <li class="border"><a href="#">Link</a></li>
-                <li class="border"><a href="#">Link</a></li>
-                <li class="border"><a href="#">Link</a></li>
-                <li class="border"><a href="#">Link</a></li>
-              </ul>
+            <div class="row pmb-left-column">Peyton Bighorse</div>
+            <div class="row pmb-left-column">Test</div>
+            <div class="row pmb-left-column">Test</div>
+          </div>
+          <div class="col-9">
+            <div class="row">
+              <div class="col-9">
+                <h2 class="rounded bg-fill">ABOUT</h2>
+                <p class="rounded bg-fill">
+                  I'm a designer, coder, and performer based in Los Angeles. I’m
+                  currently building interactive fan-focused tools and learning
+                  more about product and mobile design.
+                </p>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li class=""><a href="#">Link</a></li>
+                  <li class=""><a href="#">Link</a></li>
+                  <li class=""><a href="#">Link</a></li>
+                  <li class=""><a href="#">Contact Me</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="row border"></div>
-          <h2>Projects</h2>
-          <div class="row border">
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
-          </div>
-          <div class="row border">
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
-            <div class="col-3 border">PR</div>
+            <div class="row"></div>
+            <h2>Projects</h2>
+            <div class="row">
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="custom-btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Bird Match
+                </button>
+              </div>
+              <div class="col-6">Skating Polly</div>
+            </div>
+            <div class="row">
+              <div class="col-6">Recipe Generator</div>
+              <div class="col-6">Weather App</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!--Modals-->
+    <div id="modal-container"></div>
+
     <!--JQuery-->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -74,5 +90,6 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,46 +1,69 @@
+:root {
+  --light-blue-bg: #9e9bd196;
+  --blue-bg: #4a6596dc;
+  --dark-blue-bg: #042c56a8;
+}
 body {
   background-image: url("images/bg-graphic.gif");
   color: white;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: "Press Start 2P", system-ui;
 }
 
+.thick-border {
+  border: 4px double white;
+}
+.container-padding {
+  padding: 2rem;
+}
 .character-card-container {
-  display: block;
   margin: 25vh auto;
-  background-color: #4a6596b7;
-  border: 2px solid white;
+  max-width: 1100px;
+  width: 95%;
+  padding: 1rem;
+  background-color: var(--blue-bg);
+  border: 4px double white;
   border-radius: 3px;
-
-  max-width: 720px;
   height: auto;
 }
 .pmb-left-column {
   display: block;
-  margin: 2vh auto;
+  margin: 1vh auto;
   text-align: center;
   padding: 0.2rem;
-  background-color: #9e9bd196;
+  background-color: var(--light-blue-bg);
   font-size: clamp(0.5rem, 1.5vw, 1rem);
   border-radius: 0.25rem;
+  font-weight: bolder;
 }
 p {
+  font-family: "Play", sans-serif;
   font-size: clamp(0.5rem, 2vw, 1rem);
 }
 h2 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
+  padding: 0.5rem;
+  margin: 0 0 0.75rem 0;
+  border-radius: 0.25rem;
+}
+.about-section,
+.project-section {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  background-color: var(--light-blue-bg);
 }
 h2,
 p {
-  background-color: #9e9bd196;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  margin-bottom: 0;
 }
+
 .avatar-img {
-  display: block;
-  margin: 0 auto;
-  padding: 3rem 1rem 0 1rem;
-  background-color: #9e9bd196;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
 }
 
 ul {
@@ -50,12 +73,15 @@ ul {
 }
 ul li {
   text-align: center;
+  margin-top: 2vh;
 }
 ul li a {
   display: block;
   margin: 0 auto;
   color: white;
-  font-size: clamp(0.5rem, 1vw, 0.75rem);
+  font-size: clamp(0.5rem, 1vw, 0.7rem);
+  min-width: fit-content;
+  width: 100%;
   font-weight: bolder;
   background-color: #9e9bd196;
   padding: 0.5rem;
@@ -79,21 +105,26 @@ ul li a {
 
 ul li a:hover,
 .custom-modal a:hover {
-  color: #ff43c7;
-  background-color: #042c56a8;
+  color: white;
+  background-color: var(--dark-blue-bg);
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
   text-decoration: none;
 }
 
 .custom-btn {
   background-color: transparent;
   color: white;
-  padding: 0.25rem 0.5rem;
-  margin: 1vh auto;
-  border: 2px solid #ffffffb7;
+  border: none;
   border-radius: 0.25rem;
-  font-weight: bolder;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  text-align: left;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 1.5vh;
+  padding: 8px;
+  min-width: fit-content;
+  width: 100%;
 }
 .custom-btn:hover {
-  color: #ff43c7;
-  background-color: #042c56a8;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
 }

@@ -178,3 +178,7 @@ p {
 .custom-btn:hover {
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
 }
+
+.modal-body {
+  font-family: "Play", sans-serif;
+}

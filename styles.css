@@ -237,6 +237,24 @@ p {
     opacity: 1;
   }
 }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 1px #fff68f66, 0 0 4px #fff68f66, 0 0 7px #fff68f66,
+      0 0 10px #fff68f66, 0 0 13px #fff68f66, 0 0 15px #fff68f66,
+      0 0 30px 15px #fff68f66, 0 0 60px 30px #fff68f66, 0 0 100px 50px #fff68f66;
+  }
+  50% {
+    box-shadow: 0 0 2px #fff68f66, 0 0 6px #fff68f66, 0 0 9px #fff68f66,
+      0 0 12px #fff68f66, 0 0 15px #fff68f66, 0 0 17px #fff68f66,
+      0 0 30px 15px #fff68f66, 0 0 60px 30px #fff68f66, 0 0 100px 70px #fff68f66;
+  }
+
+  100% {
+    box-shadow: 0 0 1px #fff68f66, 0 0 4px #fff68f66, 0 0 7px #fff68f66,
+      0 0 10px #fff68f66, 0 0 13px #fff68f66, 0 0 15px #fff68f66,
+      0 0 30px 15px #fff68f66, 0 0 60px 30px #fff68f66, 0 0 100px 50px #fff68f66;
+  }
+}
 .moon {
   position: absolute;
   top: 75px;
@@ -245,8 +263,11 @@ p {
   height: 120px;
   background-color: #fffb8f;
   border-radius: 50%;
-  box-shadow: 0 0 1px #fff68f66, 0 0 4px #fff68f66, 0 0 7px #fff68f66,
-    0 0 10px #fff68f66, 0 0 13px #fff68f66, 0 0 15px #fff68f66,
-    0 0 30px 15px #fff68f66, 0 0 60px 30px #fff68f66, 0 0 100px 50px #fff68f66;
+  animation: pulse 2s infinite ease-in-out;
   z-index: 2;
+}
+@keyframes shootingStar {
+}
+.shooting-star {
+  animation: shootingStar 20s infinite;
 }

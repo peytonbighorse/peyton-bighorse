@@ -1,8 +1,8 @@
 :root {
-  --light-blue-bg: #9e9bd196;
-  --blue-bg: #4a6596dc;
-  --dark-blue-bg: #042c56a8;
+  --modal-bg: rgb(36, 72, 133);
+  --blue-bg: #06015f8e;
 }
+
 @media (max-width: 600px) {
   html,
   body {
@@ -50,9 +50,19 @@
     width: 100% !important;
     text-align: center;
   }
+  .moon {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 body {
-  background-image: url("images/bg-graphic.gif");
+  background: #6949f5;
+  background: linear-gradient(
+    0deg,
+    rgb(27, 1, 143) 0%,
+    rgb(2, 2, 110) 47%,
+    rgb(8, 0, 78) 100%
+  );
   color: white;
   font-family: "Press Start 2P", system-ui;
   overflow: hidden;
@@ -73,6 +83,8 @@ body {
   border: 4px double white;
   border-radius: 3px;
   height: auto;
+  position: relative;
+  z-index: 3;
 }
 h1 {
   font-size: clamp(0.5rem, 1.5vw, 0.75rem);
@@ -85,7 +97,7 @@ h1 {
 .pmb-left-column {
   display: block;
   margin: 1vh auto;
-  background-color: var(--light-blue-bg);
+  background-color: var(--modal-bg);
   border-radius: 0.25rem;
 }
 .emoji-labels {
@@ -101,13 +113,14 @@ h2 {
   margin: 0 0 0.75rem 0;
   border-radius: 0.25rem;
 }
-.about-section,
+.about-section {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  background-color: var(--modal-bg);
+}
 .project-section {
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  background-color: var(--light-blue-bg);
-}
-.project-section {
   width: fit-content;
   padding-right: 2vw;
 }
@@ -123,6 +136,11 @@ p {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
+  background: radial-gradient(
+    circle,
+    rgba(65, 93, 141, 1) 32%,
+    rgba(36, 71, 133, 1) 80%
+  );
 }
 
 .link-button {
@@ -132,7 +150,6 @@ p {
   font-size: clamp(0.5rem, 1vw, 0.7rem);
   width: 150px;
   font-weight: bolder;
-  background-color: #9e9bd196;
   padding: 0.35rem;
   border-radius: 0.25rem;
   margin-top: 0.5rem;
@@ -156,7 +173,6 @@ p {
 .link-button:hover,
 .custom-modal a:hover {
   color: white;
-  background-color: var(--dark-blue-bg);
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
   box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
   text-decoration: none;
@@ -165,7 +181,7 @@ p {
 .custom-btn {
   background-color: transparent;
   color: white;
-  border: none;
+  border: 4px double white;
   border-radius: 0.25rem;
   font-size: clamp(0.7rem, 1vw, 1rem);
   text-align: left;
@@ -176,9 +192,61 @@ p {
   width: 100%;
 }
 .custom-btn:hover {
+  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
 }
 
 .modal-body {
   font-family: "Play", sans-serif;
+}
+.star-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  box-shadow: 0 0 10px #fff, 0 0 15px #ff00b3;
+  z-index: 1;
+}
+.star-2 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #ff00b3;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  box-shadow: 0 0 10px #fff, 0 0 15px #ff00b3;
+  z-index: 1;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.moon {
+  position: absolute;
+  top: 75px;
+  right: 100px;
+  width: 120px;
+  height: 120px;
+  background-color: #fffb8f;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #fff68f66, 0 0 4px #fff68f66, 0 0 7px #fff68f66,
+    0 0 10px #fff68f66, 0 0 13px #fff68f66, 0 0 15px #fff68f66,
+    0 0 30px 15px #fff68f66, 0 0 60px 30px #fff68f66, 0 0 100px 50px #fff68f66;
+  z-index: 2;
 }

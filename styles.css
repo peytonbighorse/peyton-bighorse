@@ -50,6 +50,10 @@
     width: 100% !important;
     text-align: center;
   }
+  .custom-btn {
+    text-align: center !important;
+    padding: 9px 3px !important;
+  }
   .moon {
     width: 100px !important;
     height: 100px !important;
@@ -143,10 +147,11 @@ p {
   display: block;
   margin: 0 auto;
   color: white;
+  background-color: #04025d;
   font-size: clamp(0.5rem, 1vw, 0.7rem);
   width: 150px;
   font-weight: bolder;
-  padding: 0.35rem;
+  padding: 0.35rem 0.5rem;
   border-radius: 0.25rem;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
@@ -175,21 +180,21 @@ p {
 }
 
 .custom-btn {
-  background-color: transparent;
+  background-color: #04025d;
   color: white;
   border: 4px double white;
   border-radius: 0.25rem;
-  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-size: clamp(0.45rem, 1vw, 0.7rem);
   text-align: left;
   transition: all 200ms ease-in-out;
-  margin-bottom: 1.5vh;
-  padding: 8px;
+  padding: 0.35rem 0.5rem;
+  margin-bottom: 19.2px;
   min-width: fit-content;
   width: 100%;
 }
 .custom-btn:hover {
-  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
 }
 
 .modal-body {

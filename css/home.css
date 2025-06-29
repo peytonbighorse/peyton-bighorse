@@ -1,7 +1,10 @@
 :root {
   --modal-bg: rgb(6, 48, 119);
   --blue-bg: #06015f8e;
+  --btn-bg: #04025d;
   --btn-hover-color: #02007cbe;
+  --pink-solid: #c40089;
+  --pink-muted: #c4008979;
 }
 
 @media (max-width: 600px) {
@@ -61,7 +64,6 @@
   }
 }
 body {
-  background: #6949f5;
   background: linear-gradient(
     0deg,
     rgb(3, 3, 111) 0%,
@@ -94,7 +96,7 @@ body {
 h1 {
   font-size: clamp(0.5rem, 1.5vw, 0.75rem);
   font-weight: bolder;
-  text-shadow: 0 0 1px #fff, 0 0 5px #ff00b3;
+  text-shadow: 0 0 1px #fff, 0 0 5px var(--pink-solid);
   text-align: center;
   padding: 0.5rem;
   margin-bottom: 0;
@@ -123,7 +125,7 @@ h2 {
 h2 a {
   color: white;
   padding: 7px;
-  background: #c40089;
+  background: var(--pink-solid);
   border-radius: 50px;
   border: 2px solid white;
   transition: all 200ms ease-in-out;
@@ -132,23 +134,24 @@ h2 a {
 h2 a:hover {
   text-transform: lowercase;
   color: white;
-  background: #c4008979;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #c40089, 0 0 10px #c40089;
+  background: var(--pink-muted);
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
+    0 0 10px var(--pink-solid);
   text-decoration: none;
 }
 
 @keyframes pulse {
   0% {
-    text-shadow: 0 0 1px #c40089, 0 0 2px #c40089, 0 0 3px #c40089,
-      0 0 4px #c40089;
+    text-shadow: 0 0 1px var(--pink-solid), 0 0 2px var(--pink-solid),
+      0 0 3px var(--pink-solid), 0 0 4px var(--pink-solid);
   }
   50% {
-    text-shadow: 0 0 5px #c40089, 0 0 6px #c40089, 0 0 12px #c40089,
-      0 0 8px #c40089;
+    text-shadow: 0 0 5px var(--pink-solid), 0 0 6px var(--pink-solid),
+      0 0 12px var(--pink-solid), 0 0 8px var(--pink-solid);
   }
   100% {
-    text-shadow: 0 0 1px #c40089, 0 0 2px #c40089, 0 0 3px #c40089,
-      0 0 4px #c40089;
+    text-shadow: 0 0 1px var(--pink-solid), 0 0 2px var(--pink-solid),
+      0 0 3px var(--pink-solid), 0 0 4px var(--pink-solid);
   }
 }
 .about-section {
@@ -182,7 +185,7 @@ p {
   display: block;
   margin: 0 auto;
   color: white;
-  background-color: #04025d;
+  background-color: var(--btn-bg);
   font-size: clamp(0.5rem, 1vw, 0.7rem);
   width: 150px;
   font-weight: bolder;
@@ -195,7 +198,8 @@ p {
 .link-button:hover {
   color: white;
   background-color: var(--btn-hover-color);
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
+    0 0 10px var(--pink-solid);
   text-decoration: none;
   transform: scale(1.05);
 }
@@ -208,7 +212,7 @@ p {
 .custom-modal a {
   color: white;
   font-weight: bolder;
-  background-color: #04025de8;
+  background-color: var(--btn-bg);
   padding: 0.5rem 0.75rem;
   border: 4px double white;
   border-radius: 0.25rem;
@@ -217,14 +221,15 @@ p {
 
 .custom-modal a:hover {
   color: white;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
+    0 0 10px var(--pink-solid);
   background-color: var(--btn-hover-color);
   text-decoration: none;
   transform: scale(1.05);
 }
 
 .custom-btn {
-  background-color: #04025d;
+  background-color: var(--btn-bg);
   color: white;
   border: 4px double white;
   border-radius: 0.25rem;
@@ -238,7 +243,8 @@ p {
 }
 .custom-btn:hover {
   background-color: var(--btn-hover-color);
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
+    0 0 10px var(--pink-solid);
   transform: scale(1.05);
 }
 
@@ -261,17 +267,17 @@ p {
   background: white;
   border-radius: 50%;
   animation: twinkle 2s infinite ease-in-out;
-  box-shadow: 0 0 10px #fff, 0 0 15px #ff00b3;
+  box-shadow: 0 0 10px #fff, 0 0 15px var(--pink-solid);
   z-index: 1;
 }
 .star-2 {
   position: absolute;
   width: 3px;
   height: 3px;
-  background: #ff00b3;
+  background: var(--pink-solid);
   border-radius: 50%;
   animation: twinkle 2s infinite ease-in-out;
-  box-shadow: 0 0 10px #fff, 0 0 15px #ff00b3;
+  box-shadow: 0 0 10px #fff, 0 0 15px var(--pink-solid);
   z-index: 1;
 }
 @keyframes twinkle {

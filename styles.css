@@ -1,6 +1,7 @@
 :root {
   --modal-bg: rgb(6, 48, 119);
   --blue-bg: #06015f8e;
+  --btn-hover-color: #02007cbe;
 }
 
 @media (max-width: 600px) {
@@ -97,6 +98,7 @@ h1 {
   text-align: center;
   padding: 0.5rem;
   margin-bottom: 0;
+  animation: pulse 1.5s infinite ease-in-out;
 }
 .pmb-left-column {
   display: block;
@@ -114,8 +116,40 @@ p {
 h2 {
   font-size: clamp(0.5rem, 2vw, 1.5rem);
   padding: 0.5rem;
-  margin: 0 0 0.75rem 0;
+  margin-top: 0.75rem;
   border-radius: 0.25rem;
+}
+
+h2 a {
+  color: white;
+  padding: 7px;
+  background: #c40089;
+  border-radius: 50px;
+  border: 2px solid white;
+  transition: all 200ms ease-in-out;
+}
+
+h2 a:hover {
+  text-transform: lowercase;
+  color: white;
+  background: #c4008979;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #c40089, 0 0 10px #c40089;
+  text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 1px #c40089, 0 0 2px #c40089, 0 0 3px #c40089,
+      0 0 4px #c40089;
+  }
+  50% {
+    text-shadow: 0 0 5px #c40089, 0 0 6px #c40089, 0 0 12px #c40089,
+      0 0 8px #c40089;
+  }
+  100% {
+    text-shadow: 0 0 1px #c40089, 0 0 2px #c40089, 0 0 3px #c40089,
+      0 0 4px #c40089;
+  }
 }
 .about-section {
   margin-top: 0.5rem;
@@ -132,6 +166,7 @@ h2,
 p {
   padding: 0.5rem;
   border-radius: 0.25rem;
+  margin-left: 8px;
   margin-bottom: 0;
 }
 
@@ -157,26 +192,35 @@ p {
   margin-bottom: 1.2rem;
   transition: all 200ms ease-in-out;
 }
+.link-button:hover {
+  color: white;
+  background-color: var(--btn-hover-color);
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
+  text-decoration: none;
+  transform: scale(1.05);
+}
 
 .custom-modal {
   color: white;
-  background-color: #4c6798d7;
+  background-color: #062f77e8;
   border: none;
 }
 .custom-modal a {
   color: white;
   font-weight: bolder;
-  background-color: #7c85ba;
+  background-color: #04025de8;
   padding: 0.5rem 0.75rem;
+  border: 4px double white;
   border-radius: 0.25rem;
+  transition: all 200ms ease-in-out;
 }
 
-.link-button:hover,
 .custom-modal a:hover {
   color: white;
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
-  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
+  background-color: var(--btn-hover-color);
   text-decoration: none;
+  transform: scale(1.05);
 }
 
 .custom-btn {
@@ -193,8 +237,9 @@ p {
   width: 100%;
 }
 .custom-btn:hover {
+  background-color: var(--btn-hover-color);
   text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff00b3, 0 0 10px #ff00b3;
-  box-shadow: 0 0 10px #ff00b3, 0 0 20px #ff68d2, 0 0 30px #f8bee7;
+  transform: scale(1.05);
 }
 
 .modal-body {
@@ -238,7 +283,7 @@ p {
     opacity: 1;
   }
 }
-@keyframes pulse {
+@keyframes pulseMoon {
   0% {
     box-shadow: 0 0 1px #fff68f66, 0 0 4px #fff68f66, 0 0 7px #fff68f66,
       0 0 10px #fff68f66, 0 0 13px #fff68f66, 0 0 15px #fff68f66,
@@ -264,7 +309,7 @@ p {
   height: 120px;
   background-color: #fffb8f;
   border-radius: 50%;
-  animation: pulse 2s infinite ease-in-out;
+  animation: pulseMoon 2s infinite ease-in-out;
   z-index: 2;
 }
 @keyframes shootingStar {

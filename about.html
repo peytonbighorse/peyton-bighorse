@@ -23,27 +23,86 @@
       crossorigin="anonymous"
     />
     <!--CSS link-->
-    <link rel="stylesheet" href="about-styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <div class="content"></div>
-    <img src="images/pmb-avatar.png" alt="" class="img-fluid" />
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Peyton Bighorse</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link active" href="about.html">About</a>
+          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">Projects</a>
+        </div>
+      </div>
+    </nav>
 
-    <h1>Peyton Bighorse</h1>
+    <div class="whole-page">
+      <div class="left-page">
+        <img src="images/pmb-avatar.png" alt="" />
+        <h2>What I've Been:</h2>
+        <select name="current-consumption" id="currently">
+          <option value="">...</option>
+          <option value="listening">Listening To</option>
+          <option value="reading">Reading</option>
+          <option value="watching">Watching</option>
+          <option value="working">Working On</option>
+        </select>
+        <div class="current-section"></div>
+      </div>
+      <div class="about-me right-page">
+        <h1>
+          Hi, I'm Peyton — a designer, coder, and performer based in Los
+          Angeles.
+        </h1>
+        <p>
+          I started my band Skating Polly with my sister Kelli back in 2009, and
+          these days we tour and write as a trio with our brother Kurtis. We’ve
+          played all over the world, from tiny DIY spaces to major festivals.
+          <br /><br />
 
-    <p class="emoji-labels">
-      🎮 Gamer <br />
-      🐕 Dog Mom <br />
-      📍 Los Angeles
-    </p>
+          When I’m not on the road, I’m at home with my dog Georgie and my cat
+          Denny — usually going on walks, watching movies, or hiding from the
+          heat under the AC. <br /><br />
 
-    <p>
-      I'm a designer, coder, and performer based in Los Angeles. I’m currently
-      building interactive fan-focused tools and learning more about product and
-      mobile design.
-    </p>
+          Much to Georgie and Denny’s dismay, I spend a lot of my downtime
+          designing and coding. Lately, I’ve been building interactive tools for
+          fans, diving deeper into mobile and product design, and experimenting
+          with ways to make the web feel more personal and playful. <br /><br />
 
-    <script src="script.js"></script>
+          Right now I’m working on a user profile system for my band’s website,
+          expanding my bird identification game (Bird Match), and building a
+          private digital archive for a historical research project.
+          <br /><br />
+
+          When I need a break from touring or coding, you’ll usually find me
+          gaming (especially story-rich indies), birdwatching with my
+          binoculars, or curled up with a book. I love anything that sparks
+          curiosity and pulls me into a world — real or imagined. <br /><br />
+
+          At the core of all my work — whether I’m making music, designing
+          tools, or building weird little games — is a love for creativity and
+          connection.
+        </p>
+      </div>
+    </div>
+
+    <!--Script-->
+    <script src="about.js"></script>
     <!--JQuery-->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

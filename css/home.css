@@ -5,6 +5,7 @@
   --btn-hover-color: #02007cbe;
   --pink-solid: #c40089;
   --pink-muted: #c4008979;
+  --dark-bg: rgb(0, 0, 51);
 }
 
 @media (max-width: 600px) {
@@ -72,11 +73,21 @@ body {
   );
   color: white;
   font-family: "Press Start 2P", system-ui;
-  overflow: hidden;
+}
+
+.navbar {
+  position: relative;
+  background: rgb(0, 0, 51);
+  font-family: "Play", sans-serif;
+  z-index: 2;
+}
+
+.navbar a {
+  color: white;
 }
 
 .thick-border {
-  border: 4px double white;
+  border: 4px double rgba(255, 255, 255, 0.674);
 }
 .container-padding {
   padding: 2rem;
@@ -178,7 +189,7 @@ p {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
-  background: radial-gradient(circle, rgb(40, 68, 116) 32%, #063077 80%);
+  background: radial-gradient(circle, rgb(29, 49, 84) 32%, #042256 80%);
 }
 
 .link-button {

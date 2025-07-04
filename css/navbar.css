@@ -1,0 +1,10 @@
+.navbar {
+  position: relative;
+  background: rgb(0, 0, 51);
+  font-family: "Play", sans-serif;
+  z-index: 2;
+}
+
+.navbar a {
+  color: white;
+}

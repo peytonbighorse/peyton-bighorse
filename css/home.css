@@ -75,17 +75,6 @@ body {
   font-family: "Press Start 2P", system-ui;
 }
 
-.navbar {
-  position: relative;
-  background: rgb(0, 0, 51);
-  font-family: "Play", sans-serif;
-  z-index: 2;
-}
-
-.navbar a {
-  color: white;
-}
-
 .thick-border {
   border: 4px double rgba(255, 255, 255, 0.674);
 }

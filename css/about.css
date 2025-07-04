@@ -7,6 +7,34 @@
   --pink-muted: #c4008979;
   --dark-bg: rgb(0, 0, 51);
 }
+
+@media (max-width: 600px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  h1 {
+    font-size: clamp(0.5em, 1.5vh, 1em);
+  }
+
+  h2,
+  .current-button {
+    font-size: clamp(0.5em, 1vh, 1em) !important;
+  }
+
+  img {
+    width: 150px !important;
+    height: auto;
+  }
+
+  select {
+    font-size: clamp(0.5em, 1.3vh, 1em) !important;
+  }
+}
+
 body {
   background: var(--dark-bg);
   color: white;

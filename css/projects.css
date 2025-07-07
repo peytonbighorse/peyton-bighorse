@@ -1,4 +1,13 @@
-.recipe-container-small {
+:root {
+  --modal-bg: rgb(6, 48, 119);
+  --blue-bg: #06015f8e;
+  --btn-bg: #04025d;
+  --btn-hover-color: #02007cbe;
+  --pink-solid: #c40089;
+  --pink-muted: #c4008979;
+  --dark-bg: rgb(0, 0, 51);
+}
+.hidden {
   display: none;
 }
 @media (max-width: 767px) {
@@ -35,67 +44,22 @@ p {
   text-align: center;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 200ms ease-in-out;
-}
-.navigation-links a:hover {
-  color: #212529;
-}
-
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs p {
-  margin: 50px;
-  text-align: center;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-
-.email-link:hover {
-  color: #212529;
-}
-
-.btn-green {
+.project-btn {
   color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  background-color: #04025d;
+  border: 4px double rgba(255, 255, 255, 0.674);
   font-size: 0.7rem;
   width: 70%;
   text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+
+.project-btn:hover {
+  color: white;
+  background-color: var(--btn-hover-color);
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
+    0 0 10px var(--pink-solid);
+  transform: scale(1.05);
 }
 
 .img-container {
@@ -106,28 +70,26 @@ p {
 .img-container img {
   margin: 25% 0;
   box-shadow: var(--box-shadow);
-}
-
-.about-image-container {
-  padding: 10px;
-  background: var(--secondary-color);
-  box-shadow: var(--box-shadow);
-}
-
-.about-image-container img {
-  margin: 25% 0;
-  box-shadow: 1px 1px 10px #00000018;
-  transition: all 200ms ease-in-out;
-}
-.about-image-container img:hover {
-  box-shadow: 3px 3px 20px #0000003f;
-}
-
-.custom-card-container {
-  display: block;
-  padding: 1.25rem;
+  border: 4px double rgba(255, 255, 255, 0.674);
 }
 
 .card-body {
   background-color: rgb(6, 48, 119);
+  border-radius: 0.25rem;
+  border: 4px double rgba(255, 255, 255, 0.674);
+}
+.custom-card-container {
+  display: block;
+  margin: auto;
+}
+.project-row {
+  display: flex;
+  row-gap: 1vw;
+  height: fit-content;
+}
+.project-row-section {
+  margin: 1vw;
+}
+img {
+  border: 4px double rgba(255, 255, 255, 0.674);
 }

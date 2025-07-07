@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 51);
+  background-color: var(--dark-bg);
   font-family: "Press Start 2P", system-ui;
   color: white;
 }

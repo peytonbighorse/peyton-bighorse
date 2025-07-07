@@ -7,23 +7,6 @@
   --pink-muted: #c4008979;
   --dark-bg: rgb(0, 0, 51);
 }
-.hidden {
-  display: none;
-}
-@media (max-width: 767px) {
-  .recipe-container {
-    display: none;
-  }
-  .recipe-container-small {
-    display: block;
-  }
-  .img-container {
-    height: fit-content;
-  }
-  .img-container img {
-    margin: 0 !important;
-  }
-}
 
 body {
   background-color: rgb(0, 0, 51);
@@ -33,7 +16,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 5vh auto;
+  margin: 8vh auto;
 }
 
 p {
@@ -92,4 +75,33 @@ p {
 }
 img {
   border: 4px double rgba(255, 255, 255, 0.674);
+}
+.container-small {
+  display: none;
+}
+@media (max-width: 767px) {
+  .recipe-container {
+    display: none;
+  }
+  .container-small {
+    display: flex;
+  }
+
+  .img-container img {
+    margin: 0;
+  }
+  .project-row {
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+  h1 {
+    margin: 10vh;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 11px;
+  }
 }

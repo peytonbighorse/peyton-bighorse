@@ -19,6 +19,15 @@ hr {
   padding-bottom: 0;
   margin-right: 0.5rem;
 }
+
+.footer-a {
+  color: #c40089;
+}
+.footer-a:hover {
+  color: white;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #c40089, 0 0 10px #c40089;
+}
+
 .footer-img {
   border: none;
   background: none;

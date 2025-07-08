@@ -32,8 +32,8 @@ hr {
 
 .footer-img:hover {
   transform: scale(1.1);
-  filter: invert(79%) sepia(54%) saturate(1970%) hue-rotate(287deg)
-    brightness(99%) contrast(105%);
+  filter: invert(12%) sepia(94%) saturate(7268%) hue-rotate(311deg)
+    brightness(82%) contrast(101%);
 }
 .footer-emoji {
   font-size: 1.5rem;

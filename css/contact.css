@@ -8,6 +8,17 @@
   --dark-bg: rgb(0, 0, 51);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 body {
   background-color: var(--dark-bg);
   font-family: "Press Start 2P", system-ui;
@@ -25,6 +36,7 @@ p {
   font-size: 17px;
   line-height: 1.5;
   text-align: center;
+  margin: 1rem;
 }
 a {
   color: var(--pink-solid);
@@ -41,12 +53,7 @@ a:hover {
   border: 4px double rgb(255, 255, 255, 0.674);
   border-radius: 0.25rem;
 }
-.heart-emoji {
-  font-size: 22px;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px var(--pink-solid),
-    0 0 10px var(--pink-solid);
-  margin: 0;
-}
+
 @media (max-width: 767px) {
   h1 {
     margin: 10vh;

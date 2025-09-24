@@ -14,12 +14,11 @@ function displayCurrentSection(event) {
   }
   if (currentValue === "reading") {
     currentSection.innerHTML = `<div>
-    <a href="https://www.goodreads.com/book/show/13629801-the-letters-of-vincent-van-gogh" class="current-button" target="_blank">Reading now: The Letters of Vincent Van Gogh by Mark Roskill</a>
-    <a href="https://www.goodreads.com/book/show/202468422-there-are-rivers-in-the-sky?ref=nav_sb_ss_1_21" class="current-button" target="_blank">Also reading now: There Are Rivers in the Sky - Elif Shafak</a>
+    <a href="https://www.goodreads.com/book/show/202468422-there-are-rivers-in-the-sky?ref=nav_sb_ss_1_21" class="current-button" target="_blank">Reading now: There Are Rivers in the Sky - Elif Shafak</a>
     <a href="https://www.goodreads.com/book/show/218671843-run-for-the-hills?ref=nav_sb_ss_1_17" class="current-button" target="_blank">Recently finished: Run For The Hills by Kevin Wilson</a>
-    <a href="https://www.goodreads.com/book/show/18803640-h-is-for-hawk?ref=nav_sb_ss_1_13" class="current-button" target="_blank">What's next: H Is for Hawk by Helen Macdonald</a>
-    <a href="https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow?ref=nav_sb_ss_1_10" class="current-button" target="_blank">My all-time favorite: Tomorrow, Tomorrow, and Tomorrow by Gabrielle Zevin</a>
-    <a href="https://www.goodreads.com/book/show/174147294-wandering-stars?ref=nav_sb_ss_1_15" class="current-button" target="_blank">My favorite this year (so far): Wandering Stars by Tommy Orange</a>
+    <a href="https://www.goodreads.com/book/show/34376766-blood-sweat-and-pixels" class="current-button" target="_blank">What's next: Blood, Sweat, and Pixels by Jason Schreier</a>
+    <a href="https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow?ref=nav_sb_ss_1_10" class="current-button" target="_blank">All-time favorite: Tomorrow, Tomorrow, and Tomorrow by Gabrielle Zevin</a>
+    <a href="https://www.goodreads.com/book/show/174147294-wandering-stars?ref=nav_sb_ss_1_15" class="current-button" target="_blank">Favorite this year (so far): Wandering Stars by Tommy Orange</a>
     </div>`;
   }
   if (currentValue === "watching") {

@@ -1,0 +1,2 @@
+/ccl-platformer https://ccl-platformer.netlify.app/  200
+/ccl-platformer/* https://ccl-platformer.netlify.app/:splat  200

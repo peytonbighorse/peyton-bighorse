@@ -48,3 +48,22 @@ button.carousel-button.prev {
 button.carousel-button.next {
   text-align: right;
 }
+
+@media (max-width: 1199px) {
+  .carousel {
+    max-width: 150px;
+    height: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .carousel {
+    max-width: 120px;
+    height: 170px;
+  }
+}
+@media (max-width: 687px) {
+  .carousel {
+    margin: auto;
+    margin-bottom: 8px;
+  }
+}
